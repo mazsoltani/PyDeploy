@@ -1,1 +1,4 @@
-
+fastapi
+requests
+numpy
+uvicorn
