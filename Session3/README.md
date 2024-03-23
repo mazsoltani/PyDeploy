@@ -19,11 +19,14 @@ To run this project locally, you will need Python installed on your system. Then
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 # Start the FastAPI server:
 
+```bash
 uvicorn main:app --reload
+```
+
 
 # Usage
 After starting the server, you can access the API at http://127.0.0.1:8000. Here are some endpoints you can try:
