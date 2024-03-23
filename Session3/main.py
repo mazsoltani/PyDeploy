@@ -14,8 +14,8 @@ def intro():
     return {"message": "Hi! Welcome to my API. The Solar System API provides information for thousands of all solar system planets and their moons."}
 
 
-@app.get("/plants")
-def plants():
+@app.get("/planets")
+def planets():
     return {
     "sun": {
         "distanceFromSun": 0,
@@ -51,7 +51,7 @@ def plants():
     }
 
 
-@app.get("/plants/{planet_name}")
+@app.get("/planets/{planet_name}")
 def get_planet(planet_name: str):
     planets = {
         "sun": {
@@ -103,7 +103,7 @@ def get_planet(planet_name: str):
     
        
 
-@app.get("/plants/{planet_name}/image")
+@app.get("/planets/{planet_name}/image")
 def get_planet_image(planet_name: str):
 
     planets = {
