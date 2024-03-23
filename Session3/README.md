@@ -19,3 +19,16 @@ To run this project locally, you will need Python installed on your system. Then
 
 ```bash
 pip install -r requirements.txt
+
+
+# Start the FastAPI server:
+
+uvicorn main:app --reload
+
+# Usage
+After starting the server, you can access the API at http://127.0.0.1:8000. Here are some endpoints you can try:
+
+/: The root endpoint, which provides a welcome message.
+/plants: Retrieves information on all planets and major moons.
+/plants/{planet_name}: Fetches detailed information about a specific planet or moon.
+/plants/{planet_name}/image: Returns an image of the specified planet or moon.
